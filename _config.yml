@@ -1,28 +1,12 @@
-url: http://www.seohzz.com
+url: http://www.aaa.com
 
-title: Select Web
+title: 陈亦烔-博客
 
-keywords: 顺德SEO,顺德网站建设,顺德网站推广,顺德网络营销
+keywords: 陈亦烔
 
-description: Select Web是分享顺德SEO、网站建设、网站推广和网络营销的博客，为企业提供专业的SEO、网站建设、网站推广和网络营销顾问服务。
+description: 博主在顺德职业技术学院学习，学习的专业是电子商务，会Photoshop、办公软件，略懂一些网络营销技巧。性格积极向上，学习能力强。
 
 relative_permalinks: false
-
-contacts: 黄生
-
-tel: 13790019668
-
-assets:
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/js
-    - _assets/css
-  js_compressor: uglifier
-  css_compressor: sass
-  cache: true
-  cache_assets: true
-  gzip: []
 
 exclude:
   - README.md
