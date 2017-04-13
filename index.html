@@ -1,25 +1,47 @@
 ---
 layout: default
-category: home
-full_title: 勒流青年创业促进会官网
+full_title: Zack博客
 ---
-<div class="banner clearfix">
-  <div class="slideshow">
-    <div class="slider-banner-container">
-      <div class="slider-banner-fullwidth-big-height">
-        <ul class="slides">
-          <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500" data-saveperformance="on" data-title="GreenSource1">
-            <img src="/images/home/billboard-1.jpg" alt="slidebg1" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">
-          </li>
-          <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500" data-saveperformance="on" data-title="GreenSource2">
-			<img src="/images/home/billboard-2.jpg" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">
-		  </li>
-		  <li data-transition="fadefromright" data-slotamount="4" data-masterspeed="500" data-saveperformance="on" data-title="GreenSource3">
-			<img src="/images/home/billboard-3.jpg" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover">
-		  </li>
-		</ul>
-	  </div>
-	</div>
-  </div>
+<h2>首页</h2>
+<br>
+<div id="blog-posts">{% for post in site.categories["a"] %}
+  <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
+    <div class="col-md-4">
+      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.category }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
+    </div>
+    <div class="col-md-8">
+      <div class="post-summary">
+        <p class="date">{{ post.date | date:"%Y年%m月%d日" }}</p>
+        <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.description }}</p>
+        <p><a class="btn btn-sm" href="{{ site.url }}{{ post.url }}">阅读全文</a></p>
+      </div>
+    </div>
+  </div>{% endfor %}{% for post in site.categories["b"] %}
+  <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
+    <div class="col-md-4">
+      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.category }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
+    </div>
+    <div class="col-md-8">
+      <div class="post-summary">
+        <p class="date">{{ post.date | date:"%Y年%m月%d日" }}</p>
+        <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.description }}</p>
+        <p><a class="btn btn-sm" href="{{ site.url }}{{ post.url }}">阅读全文</a></p>
+      </div>
+    </div>
+  </div>{% endfor %}{% for post in site.categories["c"] %}
+  <div class="blog-post row sampleFilterOnetrue sampleFilterTwotrue">
+    <div class="col-md-4">
+      <a href="{{ site.url }}{{ post.url }}" class="thumb"><img src="/images/{{ post.category }}/{{ post.image }}.jpg" class="img-responsive hidden-xs"></a>
+    </div>
+    <div class="col-md-8">
+      <div class="post-summary">
+        <p class="date">{{ post.date | date:"%Y年%m月%d日" }}</p>
+        <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.description }}</p>
+        <p><a class="btn btn-sm" href="{{ site.url }}{{ post.url }}">阅读全文</a></p>
+      </div>
+    </div>
+  </div>{% endfor %}
 </div>
-<div id="page-start"></div>
