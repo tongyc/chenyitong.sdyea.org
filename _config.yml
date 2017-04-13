@@ -1,26 +1,12 @@
 url: http://www.sdyea.org
 
-title: 勒流青年创业促进会官网
+title: Zack博客
 
-keywords: 勒流青年创业促进会官网
+keywords: Zack博客
 
-description: 勒流青年创业促进会官网
-
-permalink: /products/:title.html
+description: Zack博客
 
 relative_permalinks: false
 
 exclude:
   - README.md
-
-assets:
-  dirname: assets
-  baseurl: /assets/
-  sources:
-    - _assets/js
-    - _assets/css
-  js_compressor: uglifier
-  css_compressor: sass
-  cache: true
-  cache_assets: true
-  gzip: []
